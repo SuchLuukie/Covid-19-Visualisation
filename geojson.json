@@ -13648,7 +13648,7 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "Democratic Republic of the Congo"
+                "name": "Democratic Republic of Congo"
             },
             "geometry": {
                 "type": "Polygon",
@@ -14150,7 +14150,7 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "Republic of the Congo"
+                "name": "Congo"
             },
             "geometry": {
                 "type": "Polygon",
@@ -18870,7 +18870,7 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "Guinea Bissau"
+                "name": "Guinea-Bissau"
             },
             "geometry": {
                 "type": "Polygon",
@@ -38238,7 +38238,7 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "Republic of Serbia"
+                "name": "Serbia"
             },
             "geometry": {
                 "type": "Polygon",
@@ -39924,7 +39924,7 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "Turkmenistan"
+                "name": "Turks and Caicos Islands"
             },
             "geometry": {
                 "type": "Polygon",
@@ -40734,7 +40734,7 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "United Republic of Tanzania"
+                "name": "Tanzania"
             },
             "geometry": {
                 "type": "Polygon",
