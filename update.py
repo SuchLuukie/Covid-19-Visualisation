@@ -17,14 +17,10 @@ class UpdateData():
 	
 	"""The main function that updates data.json and data.csv to the new dataset"""
 	def update_data(self):
-		print("[!] Calling API")
-		#data = requests.get(self.data_url).json()
-		#data = self.assignGeocode(data)
-		print("[!] Done assigning geocoding")
+		data = requests.get(self.data_url).json()
+		data = self.assignGeocode(data)
 
-		#self.writeJSON("data.json", data)
-		print("[!] Done writing Data to database")
-
+		self.writeJSON("data.json", data)
 		self.update_csv()
 
 
