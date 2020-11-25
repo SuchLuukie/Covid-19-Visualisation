@@ -3,6 +3,7 @@ import json
 import pandas as pd
 import datetime
 import csv
+import os
 from csv import reader
 
 class UpdateData():
@@ -16,10 +17,13 @@ class UpdateData():
 	
 	"""The main function that updates data.json and data.csv to the new dataset"""
 	def update_data(self):
+		print("[!] Calling API")
 		#data = requests.get(self.data_url).json()
 		#data = self.assignGeocode(data)
+		print("[!] Done assigning geocoding")
 
 		#self.writeJSON("data.json", data)
+		print("[!] Done writing Data to database")
 
 		self.update_csv()
 
@@ -35,7 +39,6 @@ class UpdateData():
 
 	"""Finds the geocode to the given country."""
 	def findGeocode(self, country):
-		print(country)
 		url = 'https://nominatim.openstreetmap.org/search/{}?format=json'.format(country)
 		response = requests.get(url).json()
 		return [response[0]["lat"], response[0]["lon"]]
@@ -49,7 +52,6 @@ class UpdateData():
 		count = 0
 		for item in data:
 			country = data[item]["location"]
-
 
 			try:
 				cases = data[item]["data"][-1]["total_cases"]
@@ -66,6 +68,7 @@ class UpdateData():
 		df = pd.read_json("csv.json")
 		df.to_csv("data.csv", index=None)
 
+		os.remove("csv.json")
 
 	"""Returns a json file."""
 	def loadJSON(self, filename):
