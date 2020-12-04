@@ -1,5 +1,6 @@
 # Covid-19 Visualisation
  A project to visualize covid-19 pandemic.
+ Automatically updates the data on the launch of the program.
 
 # Data-set used:
 https://github.com/owid/covid-19-data/tree/master/public/data
