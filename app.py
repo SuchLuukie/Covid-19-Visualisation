@@ -6,7 +6,7 @@ import json
 
 from update import UpdateData
 
-#UpdateData()
+UpdateData()
 app = Flask(__name__)
 
 """Route for the choropleth map."""
